@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: hsl(263 70% 50%);
+  --color-primary: #6b26d9;
   --color-secondary: hsl(263 70% 60%);
-  --color-background: #18141c;
+  --color-background: #070707b2;
   --color-shadow: hsl(263 70% 50% / 0.3);
   --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%), hsl(263 70% 60%));
   --gradient-secondary: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 3.7% 15.9%));
