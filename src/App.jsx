@@ -1,11 +1,16 @@
+import Header from "./components/header"
+import Experience from "./components/experience"
+import Home from "./components/home"
+import About from "./components/about"
+import Projects from "./components/projects"
 
-function App() {
-
+export default function App() {
   return (
     <>
-  
+      <Header />
+      <Home />
+      <About />
     </>
   )
 }
 
-export default App
