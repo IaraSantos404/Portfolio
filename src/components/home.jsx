@@ -4,7 +4,7 @@ import Me from "../assets/myimg.jpg"
 
 export default function Home(){
   return(
-    <section id="home ">
+    <section id="home">
       <div className="w-full h-screen relative" >
         <DarkVeil />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
