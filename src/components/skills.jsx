@@ -12,7 +12,7 @@ export default function Skills(){
       {/* Ou tecnologias & ferramentas */}
       <div className="mt-8 flex flex-wrap gap-4 justify-center w-[80%] mx-auto">
         {skills.map((skill) => (
-          <span
+          <span key={skill}
             className="text-lg border bg-black py-2 px-5 border-gray-800 rounded-[20px] text-gray-300  font-medium
             hover:bg-primary/10 hover:border-primary/30 transition-all duration-300 cursor-defaul"
           >

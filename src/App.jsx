@@ -4,6 +4,7 @@ import Home from "./components/home"
 import About from "./components/about"
 import Skills from "./components/skills"
 import Projects from "./components/projects"
+import Footer from "./components/footer"
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </>
   )
 }
