@@ -9,7 +9,7 @@ export default function Projects(){
       id: 1,
       title: "Ladding page central perk",
       image: CP,
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, pariatur omnis ipsa corporis quae nostrum voluptate quod porro dicta natus.",
+      description: "Uma ladding page fictícia inspirada no icônico Central Perk da série Friends.",
       demoLink: "https://centralperk-cafeteria.vercel.app/",
       codeLink: ""
     }
