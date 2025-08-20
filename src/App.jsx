@@ -2,6 +2,7 @@ import Header from "./components/header"
 import Experience from "./components/experience"
 import Home from "./components/home"
 import About from "./components/about"
+import Skills from "./components/skills"
 import Projects from "./components/projects"
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
       <Header />
       <Home />
       <About />
+      <Skills />
     </>
   )
 }
