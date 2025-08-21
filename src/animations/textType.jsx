@@ -13,11 +13,7 @@ const TextType = ({
   loop = true,
   className = "",
   showCursor = true,
-  hideCursorWhileTyping = false,
-  cursorCharacter = "|",
-  cursorClassName = "",
   cursorBlinkDuration = 0.5,
-  textColors = [],
   variableSpeed,
   onSentenceComplete,
   startOnVisible = false,
@@ -40,10 +36,6 @@ const TextType = ({
     return Math.random() * (max - min) + min;
   }, [variableSpeed, typingSpeed]);
 
-  const getCurrentTextColor = () => {
-    if (textColors.length === 0) return "#ffffff";
-    return textColors[currentTextIndex % textColors.length];
-  };
 
   useEffect(() => {
     if (!startOnVisible || !containerRef.current) return;
@@ -150,9 +142,7 @@ const TextType = ({
     onSentenceComplete,
   ]);
 
-  const shouldHideCursor =
-    hideCursorWhileTyping &&
-    (currentCharIndex < textArray[currentTextIndex].length || isDeleting);
+
 
   return createElement(
     Component,
@@ -161,17 +151,9 @@ const TextType = ({
       className: `inline-block whitespace-pre-wrap tracking-tight ${className}`,
       ...props,
     },
-    <span className="inline font-bold text-6xl text-secondary">
+    <span className="inline font-bold md:text-6xl text-[42px] text-primary">
       {displayedText}
     </span>,
-    // showCursor && (
-    //   <span
-    //     ref={cursorRef}
-    //     className={`ml-1 text-primary text-4xl inline-block opacity-100 ${shouldHideCursor ? "hidden" : ""} ${cursorClassName}`}
-    //   >
-    //     {cursorCharacter}
-    //   </span>
-    // )
   );
 };
 
