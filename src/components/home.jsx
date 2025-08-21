@@ -8,7 +8,7 @@ export default function Home(){
       <div className="w-full h-screen relative" >
         <DarkVeil />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="absolute inset-0 z-10">
+        <div className="absolute inset-0 z-10 mt-20">
           <div className="flex flex-wrap justify-around  mt-12 items-center">
             <div className="text-black">
               <TextType 
