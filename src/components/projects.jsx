@@ -1,4 +1,4 @@
-import CP from "../assets/CP.png"
+import CP from "../assets/CP.jpg"
 import { IoLogoGithub } from "react-icons/io";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ export default function Projects(){
       image: CP,
       description: "Uma ladding page fictícia inspirada no icônico Central Perk da série Friends.",
       demoLink: "https://centralperk-cafeteria.vercel.app/",
-      codeLink: ""
+      codeLink: "https://github.com/IaraSantos404/centralperk-cafeteria"
     }
   ]
   return(

@@ -11,7 +11,7 @@ export default function Home(){
       <div className="w-full min-h-screen relative" >
         <DarkVeil />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="absolute inset-0 z-10 flex items-center mb-[15%] justify-center px-4 py-8">
+        <div className="absolute inset-0 z-10 flex items-center mb-[2em] justify-center px-4 py-8">
           <div className="container mx-auto max-w-6xl">
             <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 lg:gap-12">
               {/* Conteúdo de texto */}
