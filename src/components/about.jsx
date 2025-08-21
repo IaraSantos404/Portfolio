@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section id="about" className="bg-[var(--color-background)]">
       <div className="container mx-auto py-24 px-6">
-        <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-10 items-center justify-around">
           
           <img 
             width={400} 
