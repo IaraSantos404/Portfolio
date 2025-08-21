@@ -27,7 +27,7 @@ html{
 
 body{
   background: var(--gradient-secondary);
-  height: 100vh;
+  height: 100%;
 }
 /* HEADER */
 .navigation ul li {
