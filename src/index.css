@@ -28,6 +28,7 @@ html{
 body{
   background: var(--gradient-secondary);
   height: 100%;
+  overflow-x: hidden;
 }
 /* HEADER */
 .navigation ul li {

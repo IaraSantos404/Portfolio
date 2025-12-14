@@ -14,7 +14,6 @@ export default function Header() {
       <header className="bg-background/80 supports-[backdrop-filter]:bg-background/60 fixed inset-x-0 top-0 z-50">
         <div className="mx-auto w-[90%] flex items-center justify-between p-3">
           <h1 className="text-primary text-3xl font-bold">Iara Santos</h1>
-
           <nav className="hidden md:block">
             <ul className="flex gap-10">
               {sections.map((section) => (

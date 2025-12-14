@@ -2,7 +2,7 @@ import TextType from "../animations/textType"
 import DarkVeil from "../animations/background"
 import { IoLogoGithub } from "react-icons/io";
 import { BsEnvelopePaper } from "react-icons/bs";
-import Curriculo from "../assets/curriculo.pdf"
+import Curriculo from "../assets/curriculo-frontend.pdf"
 import Me from "../assets/myimg.jpg"
 
 export default function Home(){
@@ -22,7 +22,7 @@ export default function Home(){
                     typingSpeed={90}
                     pauseDuration={1000}
                     showCursor={true}
-                    cursorCharacter="|"
+                    // cursorCharacter="|"
                   />
                   <p className="text-gray-400 mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                     Desenvolvedora Frontend

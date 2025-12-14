@@ -1,4 +1,5 @@
 import CP from "../assets/CP.jpg"
+import Sescomp from "./../assets/sescomp.png"
 import { IoLogoGithub } from "react-icons/io";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
@@ -7,11 +8,19 @@ export default function Projects(){
   const projetos = [
     {
       id: 1,
-      title: "Ladding page central perk",
+      title: "Central Perk Cafeteria",
       image: CP,
       description: "Uma ladding page fictícia inspirada no icônico Central Perk da série Friends.",
       demoLink: "https://centralperk-cafeteria.vercel.app/",
       codeLink: "https://github.com/IaraSantos404/centralperk-cafeteria"
+    },
+    {
+      id: 2,
+      title: "Sescomp 2025",
+      image: Sescomp,
+      description: "Criação do site oficial do Sescomp 2025, o maior evento de tecnologia do vale jaquaribe.",
+      demoLink: "https://sescomp.com.br/2025/",
+      codeLink: "https://github.com/IaraSantos404"
     }
   ]
   return(
