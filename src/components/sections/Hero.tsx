@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 export default function Hero() {
   return (
     <section className="container min-h-screen flex items-center">
-      <div className="max-w-xl space-y-5 text-left md:space-y-6">
+      <div className="max-w-xl space-y-5 text-left md:space-y-6 floating">
         <p className="text-base uppercase tracking-[0.22em] text-muted-foreground md:text-lg">
           Olá mundo, eu sou
         </p>
