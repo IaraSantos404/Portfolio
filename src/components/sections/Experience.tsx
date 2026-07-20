@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
+import SectionHeader from "@/src/components/SectionHeader";
 
 const experiences = [
     {
@@ -40,12 +41,7 @@ export default function Experience() {
     return (
         <section id="experience" className="container py-28 md:py-36">
             <div className="max-w-full space-y-10">
-                <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-                    Trajetória
-                </p>
-                <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-                    Experiência
-                </h2>
+                <SectionHeader eyebrow="Trajetória" title="Experiência" />
 
                 <div className="space-y-3">
                     {experiences.map((exp, i) => {
@@ -73,17 +69,15 @@ export default function Experience() {
                                         </p>
                                     </div>
                                     <FiChevronDown
-                                        className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-300 ${
-                                            isOpen ? "rotate-180" : ""
-                                        }`}
+                                        className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                                            }`}
                                     />
                                 </button>
 
                                 {/* Dropdown content */}
                                 <div
-                                    className={`grid transition-all duration-300 ease-in-out ${
-                                        isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                                    }`}
+                                    className={`grid transition-all duration-300 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                                        }`}
                                 >
                                     <div className="overflow-hidden">
                                         <div className="px-6 pb-5 pt-0 space-y-4">
