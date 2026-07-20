@@ -8,8 +8,8 @@ export default function About(){
           
             </p>
             <p>
-                      Minha abordagem combina criatividade com rigor técnico, sempre focando em entregar produtos que sejam ao mesmo tempo
-                elegantes, performáticos e acessíveis. Acredito que a tecnologia deve ser um meio para melhorar a experiência humana.
+            Minha abordagem combina criatividade com rigor técnico, sempre focando em entregar produtos que sejam ao mesmo tempo
+            elegantes, performáticos e acessíveis. Acredito que a tecnologia deve ser um meio para melhorar a experiência humana.
             </p>
         </section>
     )
