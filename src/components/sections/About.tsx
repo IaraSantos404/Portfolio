@@ -8,7 +8,7 @@ export default function About() {
 
         <div className="space-y-6">
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Desenvolvedora Full Stack e entusiasta de IA. Sou apaixonada
+            Desenvolvedora Full Stack com foco em frontend e entusiasta da área de IA e Machine Learning. Sou apaixonada
             por código e por criar coisas — sinto que uma vida não é o
             bastante pra aprender tudo que eu gostaria nessa área. Mesmo
             assim, busco estar em constante evolução.

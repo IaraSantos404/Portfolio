@@ -1,4 +1,3 @@
-import { FiGithub, FiHeart } from "react-icons/fi";
 
 const tools = [
   "Next.js",
@@ -9,35 +8,33 @@ const tools = [
 ];
 
 const inspirations = [
-  { name: "Linear", url: "https://linear.app" },
+  { name: "Swami", url: "https://swamii.me/" },
   { name: "Leerob.io", url: "https://leerob.io" },
-  { name: "Brittany Chiang", url: "https://brittanychiang.com" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="container mt-8 border-t border-white/[0.06] py-12">
+    <footer className="px-[10%] mt-8 border-t border-white/6  pt-20">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
 
-        {/* Feito por */}
         <div className="space-y-3">
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
             Feito por
           </p>
           <div className="flex items-center gap-2">
-            <FiHeart className="h-3.5 w-3.5 shrink-0 text-violet-400" />
-            <span className="text-sm text-foreground font-medium">
+            <a href="https://www.linkedin.com/in/iara-santos-141965287/" target="_blank" rel="noopener noreferrer"
+              className="text-sm text-foreground font-medium">
               Iara Santos
-            </span>
+            </a>
           </div>
           <a
-            href="https://github.com"
+            href="https://github.com/IaraSantos404"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
+            className="inline-flex items-center gap-2 text-[14px] 
+            text-muted-foreground transition-colors hover:text-foreground"
           >
-            <FiGithub className="h-3.5 w-3.5" />
-            github.com/iara
+            Acompanhe meu trabalho
           </a>
         </div>
 
@@ -62,32 +59,30 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Ferramentas */}
         <div className="space-y-3">
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            Ferramentas utilizadas
+            Stack utilizada
           </p>
           <div className="flex flex-wrap gap-2">
-            {tools.map((tool) => (
-              <span
-                key={tool}
-                className="rounded-full border border-white/[0.07] bg-white/[0.02] px-3 py-1 text-xs text-muted-foreground"
-              >
-                {tool}
-              </span>
-            ))}
+            <ul className="grid grid-cols-1 gap-2">
+              {tools.map((tool) => (
+                <li
+                  key={tool}
+                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {tool}
+                </li>
+              ))}
+            </ul>
+
           </div>
         </div>
 
       </div>
 
-      {/* Bottom line */}
-      <div className="mt-10 flex items-center justify-between border-t border-white/[0.04] pt-6">
-        <p className="text-xs text-muted-foreground/50">
+      <div className="mt-10 py-18 text-3lg flex items-center border-t border-white/4">
+        <p className="text-2xs text-left text-muted-foreground/50">
           © {new Date().getFullYear()} Iara Santos
-        </p>
-        <p className="text-xs text-muted-foreground/40">
-          Feito com muito café ☕
         </p>
       </div>
     </footer>

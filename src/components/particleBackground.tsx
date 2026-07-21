@@ -51,9 +51,6 @@ export default function ParticleBackground() {
       opacity: Math.random() * 0.30 + 0.08,
     }));
 
-    // ── Event handlers ──────────────────────────────────────────────
-    // pointermove is slightly cheaper than mousemove; passive: true removes
-    // the overhead of the browser checking if we call preventDefault().
     const onPointerMove = (e: PointerEvent) => {
       mouseRef.current.x = e.clientX;
       mouseRef.current.y = e.clientY;
@@ -76,15 +73,13 @@ export default function ParticleBackground() {
     window.addEventListener('pointerleave', onPointerLeave);
     window.addEventListener('resize', onResize);
 
-    // ── Draw loop ────────────────────────────────────────────────────
+
     const animate = () => {
       ctx.clearRect(0, 0, W, H);
 
       const { x: mx, y: my, active } = mouseRef.current;
 
-      // ── Update + draw particles ────────────────────────────────────
       for (const p of particles) {
-        // Mouse repulsion — O(n), only when mouse is on canvas
         if (active) {
           const dx = p.x - mx;
           const dy = p.y - my;
@@ -99,18 +94,15 @@ export default function ParticleBackground() {
           }
         }
 
-        // Soft speed cap — cheaper than normalize
         const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
         if (speed > 3) {
           p.vx = (p.vx / speed) * 3;
           p.vy = (p.vy / speed) * 3;
         }
 
-        // Friction brings particles back to drift speed naturally
         p.vx *= 0.93;
         p.vy *= 0.93;
 
-        // Restore base drift so they never fully stop
         if (!active || speed < BASE_SPEED * 2) {
           p.vx += (Math.random() - 0.5) * 0.02;
           p.vy += (Math.random() - 0.5) * 0.02;
@@ -119,7 +111,6 @@ export default function ParticleBackground() {
         p.x += p.vx;
         p.y += p.vy;
 
-        // Wrap edges
         if (p.x < -2) p.x = W + 2;
         else if (p.x > W + 2) p.x = -2;
         if (p.y < -2) p.y = H + 2;
@@ -131,16 +122,14 @@ export default function ParticleBackground() {
         ctx.fill();
       }
 
-      // ── Connections — O(n²) but pruned with bounding-box pre-check ─
-      // The cheap abs comparison eliminates ~85–90 % of pairs before sqrt.
       for (let i = 0; i < particles.length; i++) {
         const a = particles[i];
         for (let j = i + 1; j < particles.length; j++) {
           const b = particles[j];
           const dx = a.x - b.x;
-          if (Math.abs(dx) >= CONNECTION_DIST) continue;   // ← early exit
+          if (Math.abs(dx) >= CONNECTION_DIST) continue;  
           const dy = a.y - b.y;
-          if (Math.abs(dy) >= CONNECTION_DIST) continue;   // ← early exit
+          if (Math.abs(dy) >= CONNECTION_DIST) continue;   
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < CONNECTION_DIST) {
             const alpha = (1 - dist / CONNECTION_DIST) * 0.12;

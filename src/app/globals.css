@@ -60,12 +60,6 @@ body {
   border-radius: 5px;
 }
 
-.glass {
-  background: rgba(20, 20, 20, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
 @keyframes floatBarIn {
   from {
     opacity: 0;
@@ -99,4 +93,3 @@ body {
     transform: translateY(0px);
   }
 }
-

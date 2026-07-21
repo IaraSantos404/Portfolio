@@ -6,28 +6,37 @@ import SectionHeader from "@/src/components/SectionHeader";
 
 const experiences = [
     {
-        company: "NovaTech Solutions",
-        role: "Desenvolvedora Full Stack",
-        period: "2024 — Presente",
-        description:
-            "Desenvolvimento e manutenção de plataformas internas focadas em automação de processos. Participação ativa na migração de sistemas legados para arquitetura moderna baseada em microserviços.",
-        tools: ["React", "Node.js", "TypeScript", "PostgreSQL", "Docker", "AWS"],
+        company: "LUDI (Laboratório de pesquisa e desenvolvimento para Usabilidade, Diversidade e Inclusão)",
+        role: "Estagiária em Desenvolvolvimento Frontend",
+        period: "Março/2026 — Julho/2026",
+        description: [
+            "Desenvolvi e validei formulários multi-step de alta complexidade."
+        ],
+        tools: ["React-ts", "Zod", "React-hook-form", "TypeScript", "Validação de formulários", "Toasters"],
     },
     {
-        company: "Pulse Digital",
-        role: "Desenvolvedora Front-End",
-        period: "2023 — 2024",
-        description:
-            "Criação de interfaces responsivas e acessíveis para clientes do setor financeiro. Colaboração direta com o time de design para implementar design systems e componentizar a UI.",
-        tools: ["Next.js", "Tailwind CSS", "Figma", "Storybook", "Jest"],
+        company: "Include jr",
+        role: "Desenvolvedora web",
+        period: "Janeiro/2025 — Março/2026",
+        description: [
+            "Atuei como tech lead na área do frontend, revisando códigos, dando feedback e definindo stack e arquitetura de projetos ",
+            "Fiz parte do desenvolvimento de projetos do inicio ao fim.",
+            "Auxiliei no desenvolvimento backend criando funcionalidades de api RESTs em express seguindo a arquitetura limpa."
+            
+        ],
+        tools: ["Next.js", "Tailwind CSS", "Typescript", "axios", "express", "Styled Components", "api REST", "Node js", 
+            "Metodologias ágeis (scrum)"
+        ],
     },
     {
-        company: "DataSphere Labs",
+        company: "Steno Solutions",
         role: "Estagiária de Desenvolvimento",
-        period: "2022 — 2023",
-        description:
-            "Apoio no desenvolvimento de dashboards analíticos e integração com APIs de terceiros. Primeiro contato com projetos de machine learning aplicados a dados corporativos.",
-        tools: ["Python", "Flask", "React", "Chart.js", "Git"],
+        period: "Agosto/2023 — Dezembro/2023",
+        description: [
+            "Participei do desenvolvimento em dupla de criação de telas e componentes.",
+            "Prestei apoio na prototipação de alta fidelidade.",
+        ],
+        tools: ["React", "Figma", "UX/UI", "Javascript", "Git/Github", "Vite", "Acessibilidade para web"],
     },
 ];
 
@@ -49,7 +58,7 @@ export default function Experience() {
                         return (
                             <div
                                 key={i}
-                                className="rounded-xl border border-white/[0.06] bg-white/[0.02] transition-colors duration-200 hover:border-white/[0.1]"
+                                className="rounded-xl border border-white/6 bg-white/2 transition-colors duration-200 hover:border-white/10"
                             >
                                 <button
                                     onClick={() => toggle(i)}
@@ -81,15 +90,17 @@ export default function Experience() {
                                 >
                                     <div className="overflow-hidden">
                                         <div className="px-6 pb-5 pt-0 space-y-4">
-                                            <div className="h-px w-full bg-white/[0.06]" />
-                                            <p className="text-sm leading-relaxed text-muted-foreground">
-                                                {exp.description}
-                                            </p>
+                                            <div className="h-px w-full bg-white/6" />
+                                            <ul className="list-disc list-outside ml-4 text-sm leading-relaxed text-muted-foreground space-y-1">
+                                                {exp.description.map((item, idx) => (
+                                                    <li key={idx}>{item}</li>
+                                                ))}
+                                            </ul>
                                             <div className="flex flex-wrap gap-2">
                                                 {exp.tools.map((tool) => (
                                                     <span
                                                         key={tool}
-                                                        className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs text-muted-foreground"
+                                                        className="rounded-full border border-white/8 bg-white/3 px-3 py-1 text-xs text-muted-foreground"
                                                     >
                                                         {tool}
                                                     </span>

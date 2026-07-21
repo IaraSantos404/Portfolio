@@ -1,0 +1,4 @@
+Finalizar task Manager
+Deixar dados mockados e fazer readme do adotaEu
+mudar github do adotaEu para o meu
+fazer deploy em todos

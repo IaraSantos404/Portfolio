@@ -1,18 +1,18 @@
 'use client'
 
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: FaGithub, label: 'GitHub', href: 'https://github.com', color: '#d4acfe' },
-  { icon: FaLinkedin, label: 'LinkedIn', href: 'https://linkedin.com', color: '#9cdbfe' },
-  { icon: FaInstagram, label: 'Instagram', href: 'https://instagram.com', color: '#ff94d4' },
-  { icon: FaEnvelope, label: 'Email', href: 'mailto:ana@email.com', color: '#9bf7a9' },
+  { icon: FaGithub, label: 'GitHub', href: 'https://github.com/IaraSantos404', color: '#d4acfe' },
+  { icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/iara-santos-141965287/', color: '#9cdbfe' },
+  { icon: FaEnvelope, label: 'Email', href: 'mailto:iarassantosdev@gmail.com', color: '#9bf7a9' },
 ];
 
 export default function FloatingSocialBar() {
   return (
     <div className="fixed bottom-6 sm:bottom-8 left-[60%] -translate-x-1/2 z-50 animate-float-bar">
-      <div className="glass rounded-full px-6 py-3 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4),0_0_0_1px_rgba(255,255,255,0.05)] flex items-center gap-4 sm:gap-5 transition-all duration-300 hover:bg-[#151515]/95">
+      <div className="backdrop-blur-sm bg-black/20 rounded-full px-6 py-3 border border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.37),0_0_0_1px_rgba(255,255,255,0.1)]
+        flex items-center gap-4 sm:gap-5 transition-all duration-300 hover:bg-white/10 hover:border-white/25">
         {socialLinks.map((link) => (
           <a
             key={link.label}
