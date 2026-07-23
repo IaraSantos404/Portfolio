@@ -3,7 +3,7 @@ export const projects = [
     title: "Sescomp 2025",
     description:
       "Fui responsável pelo desenvolvimento do site oficial da Sescomp 2025, maior evento de tecnologia do vale jaguaribe.",
-    image: "/projects/sescomp2025.png",
+    image: "/projects/Sescomp2025.png",
     live: "https://sescomp.com.br/2025/",
   },
   {
@@ -17,7 +17,7 @@ export const projects = [
     title: "AdotaEu",
     description:
       "Projeto criado com intuito de simular a adoção e doação de animais através de uma plataforma web, onde os usuários podem cadastrar animais para adoção e também adotar animais disponíveis.",
-    image: "/projects/adotaEu.png",
+    image: "/projects/AdotaEu.png",
     github: "https://github.com/IaraSantos404/adotaEu-adoption-system",
     live: "https://adotaeu.iaradev.online/",
   },
