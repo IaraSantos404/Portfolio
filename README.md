@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✦ @CodeByIara — Portfólio
+# @CodeByIara — Portfólio
 
 Portfólio pessoal desenvolvido por **Iara Santos**, Desenvolvedora Full Stack.
 
@@ -60,7 +60,7 @@ src/
 
 ---
 
-## ✨ Features
+## Features
 
 - 🌑 **Dark Mode** — Design escuro com acentos em violeta
 - 🎨 **Glassmorphism** — Efeitos de blur e transparência nos componentes
