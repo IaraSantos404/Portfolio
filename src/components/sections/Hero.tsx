@@ -23,7 +23,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-3">
           <a
-            href="/cv.pdf"
+            href="/cv_iara(pt-BR).pdf"
             download
             className="w-full sm:w-auto cursor-pointer rounded-xl border flex items-center justify-center
               border-primary/30 bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
