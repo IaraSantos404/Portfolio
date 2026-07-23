@@ -17,7 +17,7 @@ export const projects = [
     title: "AdotaEu",
     description:
       "Projeto criado com intuito de simular a adoção e doação de animais através de uma plataforma web, onde os usuários podem cadastrar animais para adoção e também adotar animais disponíveis.",
-    image: "/projects/adotaeu.png",
+    image: "/projects/adotaEu.png",
     github: "https://github.com/IaraSantos404/adotaEu-adoption-system",
     live: "https://adotaeu.iaradev.online/",
   },
@@ -41,7 +41,7 @@ export const projects = [
     title: "Central Perk",
     description:
       "Site feito em homenagem ao famoso restaurante da série Friends.",
-    image: "/projects/CentralPerk.png",
+    image: "/projects/centralPerk.png",
     github: "https://github.com/IaraSantos404/centralPerk",
     live: "https://centralperk.iaradev.online//",
   },

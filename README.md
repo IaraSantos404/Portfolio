@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# ✦ @CodeByIara — Portfólio
 
-First, run the development server:
+Portfólio pessoal desenvolvido por **Iara Santos**, Desenvolvedora Full Stack.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Projetado para apresentar projetos, experiências e habilidades de forma moderna e interativa.
+
+[**🔗 Ver online**](https://iaradev.online) · [**💼 LinkedIn**](https://www.linkedin.com/in/iara-santos-141965287/) · [**🐙 GitHub**](https://github.com/IaraSantos404)
+
+</div>
+
+---
+
+## 🎯 Objetivo
+
+Criar um portfólio pessoal com design premium, dark mode, animações suaves e performance otimizada — servindo como vitrine profissional dos meus projetos e experiências na área de desenvolvimento.
+
+---
+
+## 🛠️ Stack
+
+| Camada        | Tecnologia                                                                |
+| ------------- | ------------------------------------------------------------------------- |
+| **Framework** | [Next.js 16](https://nextjs.org/) (App Router)                           |
+| **Linguagem** | [TypeScript](https://www.typescriptlang.org/)                            |
+| **UI**        | [React 19](https://react.dev/)                                           |
+| **Estilização** | [Tailwind CSS v4](https://tailwindcss.com/)                           |
+| **Ícones**    | [React Icons](https://react-icons.github.io/react-icons/)                |
+| **Deploy**    | [Vercel](https://vercel.com/)                                            |
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Layout raiz com fontes e metadata
+│   ├── page.tsx            # Página principal (home)
+│   ├── globals.css         # Estilos globais e variáveis CSS
+│   └── projetos/
+│       └── page.tsx        # Página com todos os projetos
+├── components/
+│   ├── Header.tsx          # Navbar fixa com navegação e menu mobile
+│   ├── Footer.tsx          # Rodapé com créditos e stack
+│   ├── ProjectCard.tsx     # Card reutilizável de projeto
+│   ├── SectionHeader.tsx   # Header padronizado de seção
+│   ├── SectionDivider.tsx  # Divisor visual entre seções
+│   ├── FloatingSocialBar.tsx # Barra flutuante com links sociais
+│   ├── particleBackground.tsx # Background animado com partículas
+│   └── sections/
+│       ├── Hero.tsx        # Seção de apresentação
+│       ├── About.tsx       # Seção sobre mim
+│       ├── Experience.tsx  # Seção de experiências
+│       └── Projects.tsx    # Seção de projetos (3 destaques)
+└── data/
+    └── projects.ts         # Dados dos projetos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🌑 **Dark Mode** — Design escuro com acentos em violeta
+- 🎨 **Glassmorphism** — Efeitos de blur e transparência nos componentes
+- ✨ **Micro-animações** — Hover effects, transições suaves e floating animations
+- 🌌 **Particle Background** — Background interativo com partículas animadas
+- 📱 **Responsivo** — Layout adaptável para mobile, tablet e desktop
+- 🧩 **Componentes reutilizáveis** — Cards, headers e divisores padronizados
+- 📄 **Página de projetos** — Rota dedicada `/projetos` com todos os projetos
+- 🔗 **Social Bar flutuante** — Links para GitHub, LinkedIn e e-mail
+- ⚡ **Next.js Image** — Otimização automática de imagens
+- 🔍 **SEO** — Metadata configurada por página
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Rodando localmente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Clone o repositório
+git clone https://github.com/IaraSantos404/Portfolio.git
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Entre na pasta
+cd Portfolio
 
-## Deploy on Vercel
+# Instale as dependências
+pnpm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Inicie o servidor de desenvolvimento
+pnpm dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O projeto estará disponível em `http://localhost:3000`.
+
+---
+
+## 📬 Contato
+
+- **Email:** iarassantosdev@gmail.com
+- **LinkedIn:** [Iara Santos](https://www.linkedin.com/in/iara-santos-141965287/)
+- **GitHub:** [IaraSantos404](https://github.com/IaraSantos404)
+
+---
+
+<div align="center">
+  <sub>Feito com 💜 por <strong>Iara Santos</strong></sub>
+</div>
