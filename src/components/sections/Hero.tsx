@@ -1,5 +1,6 @@
 import { FiDownload } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -30,14 +31,14 @@ export default function Hero() {
             <FiDownload className="mr-2 h-5 w-5" />
             Download CV
           </a>
-          <a
-            href="#projects"
+          <Link
+            href="/projetos"
             className="w-full sm:w-auto cursor-pointer rounded-xl
               border flex items-center justify-center border-border bg-background/60 px-6 py-3 font-semibold text-foreground shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-accent hover:text-accent-foreground hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <FaArrowRight className="mr-2 h-5 w-5" />
             Ver projetos
-          </a>
+          </Link>
         </div>
       </div>
     </section>

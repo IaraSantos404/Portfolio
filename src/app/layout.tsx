@@ -32,7 +32,6 @@ export default function RootLayout({
       <body className="min-h-screen">
         <ParticleBackground />
         <div className="relative z-10">
-          <Header />
           {children}
         </div>
       </body>
